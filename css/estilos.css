@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+header{
+    width: 100%;
+    display: flex; /*Será elemento padre*/
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #f1d468;
+    background-image: linear-gradient(147deg, #f1d468 0%, #210d0d 67%);
+    color: #fff;
+
+}   
+
+header .logo img{
+    width: 50%;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; 
+    align-items: flex-start;
+   
+}
+
+.menu a{
+    text-decoration: none;
+    flex-grow: 1;
+    color: #fff;
+    padding: 1.2em;
+}
+
+.menu a:hover{
+    color: #f1d468;
+    transform: scale(1.2);
+}
