@@ -1,10 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
+body{
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(-20deg, #616161 0%, #9bc5c3 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+    background-blend-mode: multiply,multiply;
+}
 
 header{
     width: 100%;
@@ -19,11 +27,14 @@ header{
 
 }   
 
+
+
 header .logo img{
     width: 50%;
 }
 
 .menu{
+    
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap; 
@@ -42,3 +53,64 @@ header .logo img{
     color: #f1d468;
     transform: scale(1.2);
 }
+
+main .contenedor{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 70%;
+    margin-top: 30px;
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    padding: 50px;
+    
+}
+
+.imginicio img{
+    width: 80%;
+    max-width: 100%;
+}
+
+main{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    align-items: center;
+    
+    
+}
+
+main .contenedor .imginicio{
+    text-align: center;
+    
+}
+
+main .contenedor p{
+    margin-top: 1.2em;
+    margin-bottom: 1.2em;
+}
+
+
+button {
+        background-image: linear-gradient(to right, #403B4A 0%, #E7E9BB  51%, #403B4A  100%);
+        margin: 3px;
+        padding: 15px 25px;
+        text-align: center;
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: #fff;           
+        box-shadow: 0 0 20px #eee;
+        border-radius: 10px;
+      }
+
+      button:hover {
+        background-position: right center; /* change the direction of the change here */
+        color: rgb(194, 197, 9);
+        transform: scale(1.1);
+        text-decoration: none;
+      }
+     
+    
+   
+
