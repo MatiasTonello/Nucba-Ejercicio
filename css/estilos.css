@@ -237,3 +237,33 @@ h3{
 .boton-form{
     width: 10%;
 }
+
+
+@media screen and (max-width:30em){
+    header{
+        flex-wrap: wrap;
+
+    }
+
+    .logo{
+        display: none;
+    }
+
+    main .contenedor{
+        box-sizing: border-box;
+        font-size: 0,3em;
+        display:flex;
+        flex-wrap: nowrap;
+        background-image: url(../img/fondo2.jpg);
+        background-attachment: fixed;
+        background-position: center;
+    }
+
+   .nosotros{
+       display: none;
+   }
+
+   .jugar{
+       background-position: center;
+   }
+}
