@@ -5,7 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mataderos FC</title>
+    
+    <script src="js/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/flexslider.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+
+
+    <script type="text/javascript">
+        $(window).load(function() {
+            $('.flexslider').flexslider();
+        });
+    </script>
+
 </head>
 <body>
     
@@ -17,7 +30,7 @@
             <nav class="menu">
                 <a href="#equip">Nuestro equipo</a>
                 <a href="#jug">Jugar partido</a>
-                <a href="">Nuestra sede</a>
+                <a href="#juga">Jugadas</a>
                 <a href="">Sponsors</a>
             </nav>
             </header>
@@ -124,7 +137,7 @@
             <p>Completa el siguiente formulario y nos ponemos en contacto</p>
 
             <div class="formulario">
-                <form action="" method="get">
+                <form id="form" action="" method="get">
                     <label for="nombre">Nombre:</label>
                     <input type="text" name="nombre" id="nombre">
                     <label for="apellido">Apellido:</label>
@@ -139,6 +152,30 @@
                 </form>
             </div>
 
+        </article>
+           
+        <article id="juga" class="jugadas">
+            <h3>Jugadas Destacadas</h3>
+            <article class="flexslider">
+                <ul class="slides">
+                    <li>
+                        <video src="img/WhatsApp Video 2021-11-02 at 13.38.55.mp4"></video>
+                        <p class="flex-caption">Gol contra miller y festejos</p>
+                    </li>
+                    <li>
+                        <video src="img/WhatsApp Video 2021-11-02 at 16.03.44.mp4"></video>
+                        <p class="flex-caption">Atajada de Chaza</p>
+                    </li>
+                    <li>
+                        <video src="img/WhatsApp Video 2021-11-21 at 18.40.35.mp4"></video>
+                        <p class="flex-caption">Gol de toledo</p>
+                    </li>
+                    <li>
+                        <video src="img/WhatsApp Video 2021-11-21 at 19.30.02.mp4"></video>
+                        <p class="flex-caption">Burrada de Pablo</p>
+                    </li>
+                </ul>
+            </article>    
         </article>
 
 
@@ -155,5 +192,44 @@
         <footer>
             <p>Matias Tonello | @Copyright 2021</p>
         </footer>
+
+
+
+        <script>
+            $(document).ready(function() {
+            $('.center').slick({
+  centerMode: true,
+  centerPadding: '60px',
+  slidesToShow: 3,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+});
+
+        });
+        </script>
+
+
+     
 </body>
+
+
+
 </html>

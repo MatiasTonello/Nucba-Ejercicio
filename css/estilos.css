@@ -176,6 +176,7 @@ footer{
 h3{
     font-size: 3em;
     padding: 1em;
+    text-align: center;
 }
 
 .jugadores img{
@@ -206,37 +207,78 @@ h3{
 }
 
 .formulario{
-
+    display: flex;
+    justify-content: center;
     text-align: center;
 }
 
 .formulario label{
+    
     display: block;
 }
 
 .formulario input{
     padding: 0.3em;
     margin: 0.2em;
-    background: rgb(25,153,44);
-    background: -moz-linear-gradient(90deg, rgba(25,153,44,0.4766281512605042) 24%, rgba(255,255,255,0.5046393557422969) 122%, rgba(26,153,25,1) 122%);
-    background: -webkit-linear-gradient(90deg, rgba(25,153,44,0.4766281512605042) 24%, rgba(255,255,255,0.5046393557422969) 122%, rgba(26,153,25,1) 122%);
-    background: linear-gradient(90deg, rgba(25,153,44,0.4766281512605042) 24%, rgba(255,255,255,0.5046393557422969) 122%, rgba(26,153,25,1) 122%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#19992c",endColorstr="#1a9919",GradientType=1);
+    color: #fff;
+    background: rgb(0,0,0);
+    background: -moz-linear-gradient(90deg, rgba(0,0,0,0.742734593837535) 8%, rgba(212,207,207,0) 72%);
+    background: -webkit-linear-gradient(90deg, rgba(0,0,0,0.742734593837535) 8%, rgba(212,207,207,0) 72%);
+    background: linear-gradient(90deg, rgba(0,0,0,0.742734593837535) 8%, rgba(212,207,207,0) 72%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#d4cfcf",GradientType=1);
     
 }
 
 .formulario textarea{
+    background: rgb(0,0,0);
+    background: -moz-linear-gradient(90deg, rgba(0,0,0,0.742734593837535) 8%, rgba(212,207,207,0) 72%);
+    background: -webkit-linear-gradient(90deg, rgba(0,0,0,0.742734593837535) 8%, rgba(212,207,207,0) 72%);
+    background: linear-gradient(90deg, rgba(0,0,0,0.742734593837535) 8%, rgba(212,207,207,0) 72%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#d4cfcf",GradientType=1);
+    width: 80%;
+    color: #fff;
+
+}
+
+#form{
+    
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 1em;
+    max-width:max-content;
+    border: 2px solid #fff;
+    border-radius: 10%;
     background: rgb(25,153,44);
-    background: -moz-linear-gradient(90deg, rgba(25,153,44,0.4766281512605042) 24%, rgba(255,255,255,0.5046393557422969) 122%, rgba(26,153,25,1) 122%);
+    background: -moz-linear-gradient(90deg, rgba(230, 233, 230, 0.753) 24%, rgba(255,255,255,0.5046393557422969) 122%, rgba(26,153,25,1) 122%);
     background: -webkit-linear-gradient(90deg, rgba(25,153,44,0.4766281512605042) 24%, rgba(255,255,255,0.5046393557422969) 122%, rgba(26,153,25,1) 122%);
     background: linear-gradient(90deg, rgba(25,153,44,0.4766281512605042) 24%, rgba(255,255,255,0.5046393557422969) 122%, rgba(26,153,25,1) 122%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#19992c",endColorstr="#1a9919",GradientType=1);
-
 }
 
 .boton-form{
-    width: 10%;
+    width: 30%;
 }
+
+.jugadas{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #e9e9e7;
+}
+
+.jugadas .flexslider{
+    width: 50%;
+    align-self: center;
+}
+
+.jugadas video{
+    max-width: 100%;
+}
+
+
+
+
 
 
 @media screen and (max-width:30em){
@@ -266,4 +308,8 @@ h3{
    .jugar{
        background-position: center;
    }
+
+ 
+
+   
 }
