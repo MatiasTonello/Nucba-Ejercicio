@@ -310,6 +310,13 @@ h3{
    }
 
  
+  h3{
+       font-size: 1em;
+   }
 
+   .jugadas video{
+       width: 300px;
+       
+   }
    
 }
