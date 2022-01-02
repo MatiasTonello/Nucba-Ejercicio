@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/flexslider.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
     <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/filtrador.js"></script>
+    <script src="js/validadorform.js"></script>
 
 
     <script type="text/javascript">
@@ -71,13 +73,27 @@
         <article id="equip" class="equipo">
             <h3>Nuestro equipo!</h3>
           
+            <label for="filtro">Filtrar jugadores:</label>
+            <select name="filtro" id="filtro">
+                <option value="0">Seleccione una opción</option>
+                <option value="Arquero">Arquero</option>
+                <option value="Defensor">Defensor</option>
+                <option value="Mediocampista">Mediocampista</option>
+                <option value="Delantero">Delantero</option>
+            </select>
+
+
 
             <div class="jugadores">
+
+
+                <div class="arqueros">
+                
                 <article class="perfil">
-                    <span><img src="img/enzo.jpg" alt=""></span>
-                    <p>Nombre: Enzo Galeano</p>
-                    <p>Posicion: Defensor</p>
-                    <p>Número: 4 </p>
+                    <span><img src="img/perfil.png" alt=""></span>
+                    <p>Nombre: Dylan Bolcar</p>
+                    <p>Posicion: Arquero</p>
+                    <p>Número: 21</p>
                 </article>
                 <article class="perfil">
                     <span><img src="img/fusco.jpeg" alt=""></span>
@@ -91,11 +107,15 @@
                     <p>Posicion:</p>
                     <p>Goles: </p>
                 </article>
+            </div>
+            
+
+            <div class="defensores">
                 <article class="perfil">
-                    <span><img src="img/perfil.png" alt=""></span>
-                    <p>Nombre: </p>
-                    <p>Posicion:</p>
-                    <p>Goles: </p>
+                    <span><img src="img/enzo.jpg" alt=""></span>
+                    <p>Nombre: Enzo Galeano </p>
+                    <p>Posicion: Defensor</p>
+                    <p>Goles: 4</p>
                 </article>
                 <article class="perfil">
                     <span><img src="img/perfil.png" alt=""></span>
@@ -127,6 +147,56 @@
                     <p>Posicion:</p>
                     <p>Goles: </p>
                 </article>
+                <article class="perfil">
+                    <span><img src="img/perfil.png" alt=""></span>
+                    <p>Nombre: </p>
+                    <p>Posicion:</p>
+                    <p>Goles: </p>
+                </article>
+
+                </div>
+
+                <div class="mediocampista">
+                <article class="perfil">
+                    <span><img src="img/perfil.png" alt=""></span>
+                    <p>Nombre: </p>
+                    <p>Posicion:</p>
+                    <p>Goles: </p>
+                </article>
+                <article class="perfil">
+                    <span><img src="img/perfil.png" alt=""></span>
+                    <p>Nombre: </p>
+                    <p>Posicion:</p>
+                    <p>Goles: </p>
+                </article>
+                <article class="perfil">
+                    <span><img src="img/perfil.png" alt=""></span>
+                    <p>Nombre: </p>
+                    <p>Posicion:</p>
+                    <p>Goles: </p>
+                </article>
+            </div>
+
+            <div class="delantero">
+                <article class="perfil">
+                    <span><img src="img/perfil.png" alt=""></span>
+                    <p>Nombre: </p>
+                    <p>Posicion:</p>
+                    <p>Goles: </p>
+                </article>
+                <article class="perfil">
+                    <span><img src="img/perfil.png" alt=""></span>
+                    <p>Nombre: </p>
+                    <p>Posicion:</p>
+                    <p>Goles: </p>
+                </article>
+                <article class="perfil">
+                    <span><img src="img/perfil.png" alt=""></span>
+                    <p>Nombre: </p>
+                    <p>Posicion:</p>
+                    <p>Goles: </p>
+                </article>
+            </div>
               
             </div>
         </article>
@@ -146,11 +216,19 @@
                     <input type="text" name="equipo" id="equipo">
                     <label for="telefono">Telefono de contacto:</label>
                     <input type="number" name="telefono" id="telefono"><br>
+                    <label for="email">Tu e-mail:</label>
+                    <input type="text" name="email" id="email">
                     <label for="mensaje">Comentarios:</label>
                     <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Dejanos tu mensaje"></textarea>
                     <br><input type="submit" value="Enviar" class="boton-form">
+                    <div id="mensaje">
+                    
+                    </div>
                 </form>
+                
             </div>
+
+           
 
         </article>
            
@@ -178,6 +256,8 @@
             </article>    
         </article>
 
+
+    
 
 
         <aside>
